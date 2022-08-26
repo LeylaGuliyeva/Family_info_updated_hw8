@@ -1,7 +1,8 @@
 package homework_8;
 import java.util.*;
 
-import org.testng.annotations.Test;
+
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -21,8 +22,7 @@ public class HumanTest {
         Human Samin=new Human("Samin","Alakbarov",1982);
         Human Lala=new Human("Lala","Alakbarova",2003) ;
         Family fami=new Family(Lala,Samin);
-        Human Eren=new Human("Eren","Alakbarov",2029,iq=100,Map<fami,cat);
-        System.out.println(Eren);
-        assertTrue(Eren.toString().equals("Human{name='Eren', surname='Alakbarov', year=2029, iq=100, schedule=[[MONDAY, TUESDAY, WEDNESDAY, THURSDAY], [Playing piano, Doing math, Yoga, Reading book]]}"));
+        Human Eren=new Human("Eren","Alakbarov",2029,iq=100,sl,fami,cat);
+        assertTrue(Eren.toString().equals("Human{name='Eren', surname='Alakbarov', year=2029, iq=100, schedule={WEDNESDAY=Yoga, TUESDAY=Playing piano, THURSDAY=Reading book, MONDAY=Playing piano}}"));
     }
 }
