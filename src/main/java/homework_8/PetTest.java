@@ -1,9 +1,10 @@
 package homework_8;
 
-import org.testng.annotations.Test;
+
 
 import java.util.HashSet;
 import java.util.Set;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -16,6 +17,7 @@ public class PetTest {
         x.add("Sleeping");
         x.add("Creating a mess");
         DomesticCat cat=new DomesticCat("Kandela",2,99,x);
-        assertTrue(cat.toString().equals("CAT{nickname='Kandela', age=2, trickLevel=99, habits=[Eating, Sleeping, Creating a mess]}"));
+        assertTrue(cat.toString().equals("DomesticCat{nickname='Kandela', age=2, trickLevel=99, habits=[Eating, Sleeping, Creating a mess]}"));
     }
+}
 }
