@@ -3,12 +3,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-import java.junit.Test;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
 
 import java.util.Arrays;
 
-import static org.junit.Assert.Ass;
+import static org.junit.Assert.*;
 
 public class FamilyTest {
     @Test
@@ -27,6 +27,7 @@ public class FamilyTest {
         bestFamily.setChildren(x);
         List<Human> x1 = new ArrayList<>(x);
         bestFamily.addChild(Amal);
+        x1.add(Amal);
         assertTrue(x1.equals(bestFamily.getChildren()));
     }
 
